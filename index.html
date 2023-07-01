@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <p>Welcome back <span v-highlight>{{ userName }}</span> how are you?</p>
+        <p>Your name has {{ userName.length }} characters.</p>
+        <p>You logged in on {{ new Date().toLocaleString('en-us') }}</p><br>
+        We wish you a pleasent day.
+        <p v-text="'<p> v-text nimmt kein html code an</p>'"></p>
+        <p v-text="vTextExampleText"></p>
+        <p v-html="vHtmlExampleText"></p>
+        <p v-once>{{ vTextExampleText }}</p>
+        <p v-pre>{{ vTextExampleText }}</p>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
